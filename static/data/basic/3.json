@@ -1,0 +1,102 @@
+{
+  "type": "single-elimination",
+  "brackets": {
+    "upper": {
+      "type": "upper",
+      "bracketTops": [
+        {
+          "upperPart": {
+            "player": "player",
+            "desc": "desc",
+            "points": 1
+          },
+          "lowerPart": {
+            "player": "player",
+            "desc": "desc",
+            "points": 1
+          },
+          "winner": "upper",
+          "firstChild": {
+            "upperPart": {
+              "player": "level2",
+              "desc": "upper",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "level2",
+              "desc": "lower",
+              "points": 1
+            },
+            "winner": "lower",
+            "firstChild": {
+              "upperPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "winner": "lower"
+            },
+            "secondChild": {
+              "upperPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "winner": "lower"
+            }
+          },
+          "secondChild": {
+            "upperPart": {
+              "player": "level2",
+              "desc": "lower",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "level2",
+              "desc": "lower",
+              "points": 1
+            },
+            "winner": "upper",
+            "firstChild": {
+              "upperPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "winner": "lower"
+            },
+            "secondChild": {
+              "upperPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "level3",
+                "desc": "lower",
+                "points": 1
+              },
+              "winner": "lower"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+

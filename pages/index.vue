@@ -8,7 +8,9 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-
+  async asyncData() {
+    
+  }
 })
 </script>
 

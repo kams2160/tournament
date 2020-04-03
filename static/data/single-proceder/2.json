@@ -1,0 +1,62 @@
+{
+  "type": "single-elimination",
+  "brackets": {
+    "upper": {
+      "type": "upper",
+      "bracketTops": [
+        {
+          "upperPart": {
+            "player": "Raphaël Lévy",
+            "desc": "Blue-Black",
+            "points": 2
+          },
+          "lowerPart": {
+            "player": "Jean-Emmanuel Depraz",
+            "desc": "Four-Color",
+            "points": 1
+          },
+          "winner": "upper",
+          "firstChild": {
+            "upperPart": {
+              "player": "Matias Leveratto",
+              "desc": "Red-Green",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "Raphaël Lévy",
+              "desc": "Blue-Black",
+              "points": 2
+            },
+            "winner": "lower"
+          }
+        },
+        {
+          "upperPart": {
+            "player": "Javier Dominguez",
+            "desc": "Black-Green",
+            "points": 0
+          },
+          "lowerPart": {
+            "player": "Eli Loveman",
+            "desc": "Green-White",
+            "points": 2
+          },
+          "winner": "lower",
+          "firstChild": {
+            "upperPart": {
+              "player": "Andrea Mengucci",
+              "desc": "White-Black",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "Javier Dominguez",
+              "desc": "Black-Green",
+              "points": 2
+            },
+            "winner": "lower"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "single-elimination",
+  "brackets": {
+    "upper": {
+      "type": "upper",
+      "bracketTops": [
+        {
+          "upperPart": {
+            "player": "Javier Dominguez",
+            "desc": "Gruul Aggro",
+            "points": 2
+          },
+          "lowerPart": {
+            "player": "Jean-Emmanuel Depraz",
+            "desc": "Gruul Aggro",
+            "points": 1
+          },
+          "winner": "upper",
+          "firstChild": {
+            "upperPart": {
+              "player": "Javier Dominguez",
+              "desc": "Gruul Aggro",
+              "points": 2
+            },
+            "lowerPart": {
+              "player": "Gabriel Nassif",
+              "desc": "Gruul Aggro",
+              "points": 1
+            },
+            "winner": "upper",
+            "firstChild": {
+              "upperPart": {
+                "player": "Stanislav Cifka",
+                "desc": "Bant Ramp",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "Javier Dominguez",
+                "desc": "Bant Ramp",
+                "points": 2
+              },
+              "winner": "lower"
+            },
+            "secondChild": {
+              "upperPart": {
+                "player": "Gabriel Nassif",
+                "desc": "Simic Food",
+                "points": 2
+              },
+              "lowerPart": {
+                "player": "William Jensen",
+                "desc": "Simic Food",
+                "points": 1
+              },
+              "winner": "upper"
+            }
+          },
+          "secondChild": {
+            "upperPart": {
+              "player": "Andrea Mengucci",
+              "desc": "Bant Food",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "Jean-Emmanuel Depraz",
+              "desc": "Bant Food",
+              "points": 2
+            },
+            "winner": "lower",
+            "firstChild": {
+              "upperPart": {
+                "player": "Andrea Mengucci",
+                "desc": "Bant Food",
+                "points": 2
+              },
+              "lowerPart": {
+                "player": "Lee Shi Tian",
+                "desc": "Bant Food",
+                "points": 1
+              },
+              "winner": "upper"
+            },
+            "secondChild": {
+              "upperPart": {
+                "player": "Ken Yukuhiro",
+                "desc": "Mardu Knights",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "Jean-Emmanuel Depraz",
+                "desc": "Mardu Knights",
+                "points": 2
+              },
+              "winner": "lower"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

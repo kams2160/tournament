@@ -1,0 +1,114 @@
+{
+  "type": "single-elimination",
+  "brackets": {
+    "upper": {
+      "type": "upper",
+      "bracketTops": [
+        {
+          "upperPart": {
+            "player": "",
+            "desc": "",
+            "points": null
+          },
+          "lowerPart": {
+            "player": "Carol",
+            "desc": "desc",
+            "points": null
+          },
+          "winner": null,
+          "firstChild": {
+            "upperPart": {
+              "player": "Timo",
+              "desc": "level2-1",
+              "points": 0
+            },
+            "lowerPart": {
+              "player": "Buddy",
+              "desc": "level2-2",
+              "points": 0
+            },
+            "winner": null,
+            "firstChild": {
+              "upperPart": {
+                "player": "Timo",
+                "desc": "level3-1",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "Buddy",
+                "desc": "level3-2",
+                "points": 2
+              },
+              "winner": "lower",
+              "firstChild": {
+                "upperPart": {
+                  "player": "Timo",
+                  "desc": "level4-1",
+                  "points": 2
+                },
+                "lowerPart": {
+                  "player": "Bobby",
+                  "desc": "level4-2",
+                  "points": 0
+                },
+                "winner": "upper"
+              },
+              "secondChild": {
+                "upperPart": {
+                  "player": "Buddy",
+                  "desc": "level4-3",
+                  "points": 2
+                },
+                "lowerPart": {
+                  "player": "Blaze",
+                  "desc": "level4-4",
+                  "points": 1
+                },
+                "winner": "upper"
+              }
+            }
+          },
+          "secondChild": {
+            "upperPart": {
+              "player": "Marc",
+              "desc": "level2-3",
+              "points": 1
+            },
+            "lowerPart": {
+              "player": "Carol",
+              "desc": "level2-4",
+              "points": 2
+            },
+            "winner": "lower",
+            "firstChild": {
+              "upperPart": {
+                "player": "Marc",
+                "desc": "level3-3",
+                "points": 2
+              },
+              "lowerPart": {
+                "player": "Kate",
+                "desc": "level3-4",
+                "points": 0
+              },
+              "winner": "upper"
+            },
+            "secondChild": {
+              "upperPart": {
+                "player": "Slaw",
+                "desc": "level3-5",
+                "points": 1
+              },
+              "lowerPart": {
+                "player": "Carol",
+                "desc": "level3-6",
+                "points": 2
+              },
+              "winner": "lower"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
