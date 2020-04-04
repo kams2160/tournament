@@ -30,7 +30,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .wrapper {
   display: flex;
-  height: 600px;
   justify-content: center;
 }
 </style>

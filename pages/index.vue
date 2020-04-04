@@ -31,7 +31,5 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background: #000000;
-}
+  text-align: center;}
 </style>

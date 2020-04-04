@@ -1,63 +1,15 @@
 <template>
   <div>
     <div v-for="(match, index) in matches" :key="index" class="item">
-      <div class="item-parent">
-        <AppNode />
+      <div :class="{'item-parent': isParentNode(match)}">
+        <AppNode :upperPart="match.upperPart" :lowerPart="match.lowerPart" :winner="match.winner" />
       </div>
-      <div class="item-childrens">
-        <div class="item-child">
-          <div class="item">
-            <div class="item-parent">
-              <AppNode />
-            </div>
-            <div class="item-childrens">
-              <div class="item-child">
-                <div class="item">
-                  <div class="item-parent">
-                    <AppNode />
-                  </div>
-                  <div class="item-childrens">
-                    <div class="item-child">
-                      <AppNode />
-                    </div>
-                    <div class="item-child">
-                      <AppNode />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item-child">
-                <AppNode />
-              </div>
-            </div>
-          </div>
+      <div v-if="isParentNode(match)" class="item-childrens">
+        <div v-if="match.firstChild" class="item-child">
+          <AppBracket :matches="[match.firstChild]" />
         </div>
-        <div class="item-child">
-          <div class="item">
-            <div class="item-parent">
-              <AppNode />
-            </div>
-            <div class="item-childrens">
-              <div class="item-child">
-                <div class="item">
-                  <div class="item-parent">
-                    <AppNode />
-                  </div>
-                  <div class="item-childrens">
-                    <div class="item-child">
-                      <AppNode />
-                    </div>
-                    <div class="item-child">
-                      <AppNode />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item-child">
-                <AppNode />
-              </div>
-            </div>
-          </div>
+        <div v-if="match.secondChild" class="item-child">
+          <AppBracket :matches="[match.secondChild]" />
         </div>
       </div>
     </div>
@@ -67,15 +19,21 @@
 <script lang="ts">
 import Vue from 'vue'
 import { BracketsWrapper } from '~/models/BracketsWrapper'
-import AppNode from '~/components/AppNode.vue'
 import { Match } from '~/models/Match'
+import AppNode from '~/components/AppNode.vue'
 
 export default Vue.extend({
+  name: 'AppBracket',
   components: {
     AppNode
   },
   props: {
     matches: Array as () => Match[]
+  },
+  methods: {
+    isParentNode(match: Match): boolean {
+      return !!(match.firstChild || match.secondChild)
+    }
   }
 })
 </script>
