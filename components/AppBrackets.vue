@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="wrapper">
-      <AppBracket :matches="matches" />
+      <AppBracket v-if="inputData.brackets.upper" :matches="inputData.brackets.upper.bracketTops" />
+      <AppBracket v-if="inputData.brackets.lower" :matches="inputData.brackets.lower.bracketTops" />
+      <AppBracket v-if="inputData.brackets.final" :matches="inputData.brackets.final.bracketTops" />
     </div>
   </div>
 </template>
@@ -11,18 +13,14 @@ import Vue from 'vue'
 import { BracketsWrapper } from '~/models/BracketsWrapper'
 import AppBracket from '~/components/AppBracket.vue'
 import { Match } from '~/models/Match'
+import { InputData } from '~/models/InputData'
 
 export default Vue.extend({
   components: {
     AppBracket
   },
   props: {
-    brackets: Object as () => BracketsWrapper
-  },
-  computed: {
-    matches(): Match[] {
-      return this.brackets.upper.bracketTops
-    }
+    inputData: Object as () => InputData
   }
 })
 </script>
@@ -31,5 +29,6 @@ export default Vue.extend({
 .wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 </style>

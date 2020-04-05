@@ -57,7 +57,7 @@ $vertical-margin: 10px;
       width: $side-margin/2;
       height: 2px;
       left: 0;
-      top: 50%;
+      top: calc(50% - 1px);
       background-color: #ff6000;
       transform: translateX(-100%);
     }
@@ -80,7 +80,7 @@ $vertical-margin: 10px;
         position: absolute;
         background-color: #ff6000;
         right: 0;
-        top: 50%;
+        top: calc(50% - 1px);
         transform: translateX(100%);
         width: 25px;
         height: 2px;
