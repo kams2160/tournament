@@ -1,5 +1,5 @@
 export interface MatchPlayer {
-  player: string; //name of a player
-  desc: string; //additional description
+  player: string;
+  desc: string;
   points: number;
 }

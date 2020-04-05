@@ -8,8 +8,14 @@
         <div v-if="match.firstChild" class="item-child">
           <AppBracket :matches="[match.firstChild]" />
         </div>
+        <div v-else class="item-child">
+          <AppBracket :matches="[getOneMatchPlayer(match.upperPart)]" />
+        </div>
         <div v-if="match.secondChild" class="item-child">
           <AppBracket :matches="[match.secondChild]" />
+        </div>
+        <div v-else class="item-child">
+          <AppBracket :matches="[getOneMatchPlayer(match.lowerPart)]" />
         </div>
       </div>
     </div>
@@ -20,6 +26,7 @@
 import Vue from 'vue'
 import { BracketsWrapper } from '~/models/BracketsWrapper'
 import { Match } from '~/models/Match'
+import { MatchPlayer } from '~/models/MatchPlayer'
 import AppNode from '~/components/AppNode.vue'
 
 export default Vue.extend({
@@ -33,6 +40,12 @@ export default Vue.extend({
   methods: {
     isParentNode(match: Match): boolean {
       return !!(match.firstChild || match.secondChild)
+    },
+    getOneMatchPlayer(matchPlayer: MatchPlayer): Match {
+      return <Match>{
+        winner: 'upper',
+        upperPart: Object.assign({}, matchPlayer, { points: 2 })
+      }
     }
   }
 })

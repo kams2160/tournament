@@ -51,6 +51,6 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: wheat;
+  color: white;
 }
 </style>
