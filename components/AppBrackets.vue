@@ -1,24 +1,20 @@
 <template>
-  <div>
-    <div class="wrapper">
-      <AppBracket v-if="inputData.brackets.upper" :matches="inputData.brackets.upper.bracketTops" />
-      <div class="round" v-if="inputData.brackets.lower">
-        <p class="round-title">Second round</p>
-        <AppBracket :matches="inputData.brackets.lower.bracketTops" />
-      </div>
-      <div class="round" v-if="inputData.brackets.final">
-        <p class="round-title">Final round</p>
-        <AppBracket :matches="inputData.brackets.final.bracketTops" />
-      </div>
+  <div class="wrapper">
+    <AppBracket v-if="inputData.brackets.upper" :matches="inputData.brackets.upper.bracketTops" />
+    <div class="round" v-if="inputData.brackets.lower">
+      <p class="round-title">Second round</p>
+      <AppBracket :matches="inputData.brackets.lower.bracketTops" />
+    </div>
+    <div class="round" v-if="inputData.brackets.final">
+      <p class="round-title">Final round</p>
+      <AppBracket :matches="inputData.brackets.final.bracketTops" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import { BracketsWrapper } from '~/models/BracketsWrapper'
 import AppBracket from '~/components/AppBracket.vue'
-import { Match } from '~/models/Match'
 import { InputData } from '~/models/InputData'
 
 export default Vue.extend({

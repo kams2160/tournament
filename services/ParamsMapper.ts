@@ -1,4 +1,5 @@
-import { Games } from '~/config/Games';
+import { Games } from '~/config/Games'
+
 export const mapParams = (param: string): string => {
   switch (param) {
     case Games.SingleElimination: return 'singleElimination'

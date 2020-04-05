@@ -1,6 +1,6 @@
-import { Match } from '~/models/Match';
+import { Match } from '~/models/Match'
 
 export interface Bracket {
-  type: "upper" | "lower" | "final";
-  bracketTops: Match[];
+  type: "upper" | "lower" | "final"
+  bracketTops: Match[]
 }

@@ -23,10 +23,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { BracketsWrapper } from '~/models/BracketsWrapper'
-import AppBracket from '~/components/AppBracket.vue'
-import { Match } from '~/models/Match'
-import { InputData } from '~/models/InputData'
 import { MenuItem } from '~/models/MenuItem'
 
 export default Vue.extend({
