@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HomePage from '~/pages/Index'
+import HomePage from '~/pages/Index.vue'
 
 Vue.use(Router)
 
